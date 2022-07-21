@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=The+Nautigal:wght@700&display=swap');
+
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.h2{
+    display: flex;
+    font-size: 50px;
+    color: #2f3247;
+    text-transform: uppercase;
+    font-family: 'Kalam', cursive;
+    margin: .2rem .5rem 0 .5rem;
+}
+
+@media(max-width:935px){
+    .header{
+        display:flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+    
+}

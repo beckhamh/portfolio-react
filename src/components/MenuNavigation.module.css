@@ -1,0 +1,56 @@
+.menu{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17rem;
+    height: 3rem;
+    border-radius: 1.2rem;
+    list-style-type: none;
+    background-color: rgba(233, 240, 240, 0.822);
+    z-index: 100;
+    
+}
+ul{
+    list-style-type: none;
+    padding: .5rem;
+    font-size:20px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+ul li{
+    cursor: pointer;
+}
+.iconmenu{
+    font-size: 25px;
+    color: rgb(204, 206, 211);
+    position: absolute;
+    right: 3rem;
+    top: 3.5rem;
+}
+.lien{
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+}
+.lien:hover{
+    color: rgb(13, 117, 208);
+}
+.lienActive{
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+    font-size: 25px;
+}
+.lienActive:hover{
+    color: rgb(13, 117, 208);
+}
+
+
+@media (max-width:500px) {
+    .menu{
+        margin: 0;
+        width: 17rem;
+        height: 2rem;
+
+    }
+}
+

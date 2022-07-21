@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,500&family=Kalam:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=PT+Serif:wght@700&family=Rajdhani&family=Roboto:ital,wght@0,300;1,300&family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,500&family=Ibarra+Real+Nova:ital@1&family=Kalam:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=PT+Serif:wght@700&family=Poppins:ital,wght@1,300&family=Rajdhani&family=Roboto:ital,wght@0,300;1,300&family=The+Nautigal:wght@700&display=swap');
+.component1{
+    margin: 1rem auto 1rem auto;
+    padding: 1rem 1rem 0 1rem;
+    max-width: 55rem;
+}
+.p1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Finlandica', sans-serif;
+    font-size: 50px;
+    color: rgba(39, 38, 37, 0.984);
+
+}
+.p2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    box-shadow: 0 15px 35px rgba(118, 117, 117, 0.75);
+
+}
