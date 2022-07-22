@@ -1,7 +1,7 @@
 image: node:latest
 
 variables:
-  PUBLIC_URL: "/myportfolio" 
+  PUBLIC_URL: "/portfolio" 
 
 pages:
   cache:
