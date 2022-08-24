@@ -1,4 +1,4 @@
-image: node:latest
+image: dseegers/puppeteer:latest
 
 variables:
   PUBLIC_URL: "/portfolio" 
@@ -11,6 +11,8 @@ pages:
     policy: pull
  
   stage: deploy
+  before_script:
+    - npm install puppeteer
   script:
     - npm install
     - npm run build
