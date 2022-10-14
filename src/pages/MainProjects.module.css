@@ -1,5 +1,5 @@
 .section3{
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 .cards{
     display: flex;
@@ -18,5 +18,32 @@
     font-weight: lighter;
     font-size: 50px;
     font-style:italic;
-    margin-bottom: 2rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+/*webProject1*/
+.mainpage{
+    margin: 4rem 1rem 1rem 1rem;
+    position: relative;
+    border: solid 1px transparent;
+}
+.back{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .5rem;
+    color: #fff;
+    margin: 1rem 1rem 0 1.5rem;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.back:hover{
+    color: #2485e0;
+}
+.txtback:hover{
+    color: #fff;
 }

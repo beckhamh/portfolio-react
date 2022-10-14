@@ -1,4 +1,5 @@
 @import-normalise;
+@import url('http://fonts.cdnfonts.com/css/cascadia-mono');
 
 *
 {
@@ -7,5 +8,6 @@
 }
 
 body{
-    background: radial-gradient(#ffffff, #5894c6b8);
+    background-color: #2f3032;
+    font-family: 'Cascadia Mono' , sans-serif ;
 }

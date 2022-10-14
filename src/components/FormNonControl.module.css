@@ -6,15 +6,18 @@
     max-width: 42rem;
     min-width: 10rem;
     gap: .5rem;
-    margin: 1rem auto;
+    margin: 4rem auto 2rem;
     padding: 1rem;
 }
 .p{
-    font-size: 20px;
+    display: flex;
+    font-size: 25px;
     line-height: 2.2rem;
-    margin: 1rem;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
+    color: rgb(152, 162, 172);
+    margin: 1rem;
 }
 input, textarea{
     padding: .5rem;
@@ -40,8 +43,10 @@ input, textarea{
     height: 2rem;
 }
 .p2{
-    font-size: 16px;
+    font-size: 18px;
     margin-left: .5rem;
+    color: antiquewhite;
+    font-family: italic;
 }
 
 .erreur{

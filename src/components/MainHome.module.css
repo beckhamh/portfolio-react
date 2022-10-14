@@ -1,188 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+JP:wght@400;500&family=PT+Serif:wght@700&family=Rajdhani&family=The+Nautigal:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=PT+Serif:wght@700&family=Rajdhani&family=Roboto:ital,wght@0,300;1,300&family=The+Nautigal:wght@700&display=swap');
-
-.cercle{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    z-index: 10;
-}
-.cercle1{
-    position: relative;
-    width: 400px;
-    height: 400px;
-    background:rgba(88, 126, 98, 0.5) ;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 1rem;
-}
-.cercle1::before{
-    content:'';
-    position: absolute;
-    inset: -10px 140px;
-    background: linear-gradient(300deg, #00ccff, #fa04fa);
-    transition: 0.5s;
-    animation: animate 4s linear infinite;
-
-}
-.cercle1:hover::before
-{
-    inset: -20px 0px;
-}
-
-@keyframes animate{
-    0%
-    {
-        transform: rotate(0deg);
-    }
-    100%
-    {
-        transform: rotate(360deg);
-    }
-}
-.cercle1::after{
-    content: '';
-    position: absolute;
-    inset: 6px;
-    background: #575a69;
-    border-radius: 50%;
-    z-index: 1;
-}
-.cercle2{
-    position: absolute;
-    inset: 30px;
-    border: 6px solid #8b8c8c;
-    z-index: 3;
-    border-radius: 50%;
-}
-.avatar{
-    position: absolute;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    object-fit: cover;
-}
-
-/*section 1*/
 
 .section1{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10rem auto 1rem;
 }
-.p1{
-    font-size: 37px;
-    column-gap: 1rem;
-}
-.p2{
-    font-size: 45px;
-    color: #15819fd6;
-    
-}
-.p121{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 28rem;
-    text-transform:capitalize;
-}
-.p3{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    color: #000;
-    margin-top: 1.5rem;
-    line-height: 30px;
-}
-.git{
-    line-height: 60px;
-}
+.section2{
+    display: block;
+    flex-direction: column;
+    width: 27rem;
 
-.txt{
+}
+.content{
     display: flex;
-    flex-wrap: wrap;
-    max-width: 680px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 500;
-    margin: 1rem;
-    
+    column-gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .skills{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    width: 35rem;
+    height: 25rem;
+}
+
+.slidbar{
+    position: relative;
+    width: 2rem;
+    height: 12rem;
+    z-index: 50;
+}
+.circle{
+    position: absolute;
+    top: 1rem;
+    left: .6rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2485e0;
+    ;
+}
+.bar{
+    position: absolute;
+    top: 1rem;
+    left: .8rem;
+    width: 2px;
+    height: 11rem;
+    border-radius: 3rem;
+    background-color:#2485e0;
+}
+.desciption{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 10rem;                                   
+}
+.bekam{
+    font-size: 70px;
+    font-weight: 700;
+}
+.is{
+    font-size: 50px;
+    color: #2485e0;
+}
+.bh{
+    color: #0f7de3;
+    font-size: 22px;
+    margin: .3rem;
+}
+.fl{
+    font-size: 22px;
+    margin: .3rem;
+    color: #fff;}
+
+h2{
+    margin:0 3rem 0 3rem;
+}
+.nom{
+    margin-left: .5rem ;
+    font-size: 30px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin-top: 6rem;
+    justify-content: center;
+    width: 25rem;
+    height: 15rem;
+    column-gap: 5rem;
 }
-.container{
-    width: 12rem;
-    height: 6.5rem;
-    display: inline-block;
-    margin: 0 0 0 9rem;
+.txt1{
+    font-size: 19px;
+    font-weight: 600;
+    color: #767778;
+    text-shadow: 1px 0px 1px#fff;
+
 }
+.txt2{
+    font-size: 19px;
+    color: #767778;
+    margin-top: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 0px 1px#fff;
+
+}
+.txtTransition1{
+    font-size: 20px;
+    color: #47c8f3;
+    margin: 1rem 0 0 0;
+}
+.txtTransition2{
+    font-size: 20px;
+    color: #47c8f3;
+    margin: 1rem 0 0 0;
+
+}
+
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .container1{
+    width: 7rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 11rem;
-    height: 2.5rem;
-    border-radius: .5rem;
-    background-color: rgba(193, 199, 205, 0.859);
     text-decoration: none;
-    color: #000;
+    align-items: center;
+    padding: .3rem .5rem;
+    border-radius: 2rem;
     font-size: 17px;
+    font-weight: 600;
+    background-color: #6b6e71;
+    color: rgb(255, 255, 255);
     margin: .5rem;
-    column-gap: .5rem;
 }
 .container1:hover{
-    background-color: #2485e0;
+    background-color: #fff;
+    color: #3489d8;
 }
-.icon{
-    font-size: 25px;
-    cursor: pointer;
-    color: #e4136af3;
+.r{
+    font-size: 20px;
+    margin-left: .4rem;
 }
-@media(max-width:1200px){
-    .cercle1{
-        width: 230px;
-        height: 230px;
-    }
-    .cercle2{
-        inset: 17px;
-    }
-    .cercle1::before{
-        inset: -10px 80px;
-    }
-    .iconmail{
-        font-size: 35px;
-    }
-    
+.bottons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 20rem;
+    margin-bottom: 3rem;
+    column-gap: 2rem;
 }
-@media(max-width:973px){
-    .p121{
+.contact{
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    padding: .3rem .5rem;
+    border-radius: 2rem;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #6b6e71;
+    color: rgb(255, 255, 255);
+    margin: .5rem;
+}
+.contact:hover{
+    background-color: #fff;
+    color: #3489d8;
+}
+
+@media(max-width:1100px){
+    .section1{
         display: flex;
         justify-content: center;
-        max-width: 23rem;
-        margin: 0 auto;
     }
-    .p1{
-        font-size: 25px;
-    }
-    .p2{
-        font-size: 28px;
-    }
-    .p3{
-        font-size: 17px;
-    }
-    .container{
-        margin: 1rem 1rem 1rem 0;
-    }
-
 }

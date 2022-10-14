@@ -1,110 +1,92 @@
-import {Link} from "react-router-dom";
-
+import { useState, useEffect } from "react";
+import GallerieCDN from "./GallerieCDN";
 import styles from './MainHome.module.css';
-import avatar from '../ressources/avatar.jpg';
-import Skills from './Skills';
+import { BiDownload } from "react-icons/bi";
 import CV from '../ressources/CV_BelkacemHeraoua.pdf';
+import { NavLink } from "react-router-dom";
 
-import { IconContext } from "react-icons";
-import { AiOutlineHtml5 } from "react-icons/ai";
-import { ImCss3 } from "react-icons/im";
-import { SiJavascript, SiCsharp, SiMicrosoftsqlserver, SiDotnet } from "react-icons/si";
-import { DiJava } from "react-icons/di";
-import { FaNodeJs, FaReact } from "react-icons/fa";
-import { BiMailSend, BiDownload } from "react-icons/bi";
+
+import TextTransition, { presets } from "react-text-transition";
 
 export default function MainHome(){
-    return <>
-    <section className={styles.section1}>
-        <div className={styles.cercle}>
-            <div className={styles.cercle1}>
-                <div className={styles.cercle2}>
-                    <img src={avatar} alt="avatar" className={styles.avatar}/>
+
+    
+    const dev = [
+        "Web site",
+        "Android application",
+        "IOS application",
+        "web application",
+        "Desktop application"
+    ];
+    const tech = [
+        "Node.js, Handlebars",
+        "Java",
+        "Swift",
+        "React, Next.js",
+        "C#, Java, .Net Framework"
+    ];
+
+    const App = () => {
+        const [index, setIndex] = useState(0);
+            useEffect(() => {
+            const intervalId = setInterval(() =>
+                setIndex(index => index + 1),
+                3000 // every 3 seconds
+            );
+            return () => clearTimeout(intervalId);
+            }, []);
+      
+        return (<>
+        <div className={styles.box}>
+            <span className={styles.txt1}>I develop</span>
+            <TextTransition springConfig={presets.slow} >
+                <div className={styles.txtTransition1}>
+                    {dev[index % dev.length]}
                 </div>
+            </TextTransition>
+            <span className={styles.txt2}>using</span>
+            <TextTransition springConfig={presets.slow} >
+                <div className={styles.txtTransition2}>
+                    {tech[index % tech.length]}
+                </div>
+            </TextTransition> 
+        </div> </> );
+    };
+    
+    return <>
+        <div className={styles.section1}>
+            <div className={styles.section2}>
+                <div className={styles.content}>
+                    <div className={styles.slidbar}>
+                        <div className={styles.circle}></div>
+                        <div className={styles.bar}></div>
+                    </div>
+                    <div className={styles.desciption}>
+                        <h1 className={styles.bekam}>bekam<span className={styles.is}>.is()</span></h1>
+                        <span className={styles.bh}>Belkacem Heraoua</span>
+                        <span className={styles.fl}>Full Stack Developer</span>
+                        {'}'}
+                    </div>
+                </div>
+                
+                <div className={styles.icons}>
+                    {App(1)}
+                </div> 
+            </div>
+
+            <div className={styles.skills}>
+                <div className={styles.bottons}>
+                    <a href={CV} download="CV_BelkacemHeraoua.pdf" className={styles.container1}>
+                        <span>Resume</span>
+                        <BiDownload className={styles.r}/>
+                    </a>
+                    <NavLink to='contact' className={styles.contact}> contact</NavLink>    
+                </div>
+                <GallerieCDN />
             </div>
         </div>
-        <div className={styles.txt}>
-            <div className={styles.p121}>
-                <p className={styles.p1}>hello, i'm</p>
-                <p className={styles.p2}> belkacem heraoua</p>
-                <p className={styles.p1}>full stack developer</p>
-            </div>
-            
-            <p className={styles.p3}> 
-                I'm new graduate in computer programming at La Cite, during  my  time in college I have developed
-                several skills, in various programming languages, I am  motivated  and  i like  everything
-                about web development ( Front and Back End ), i  would like  to work in  a dynamic team to  
-                practice my skills in this field (html, css, js, Node.js, React.js) as well as in Java, C#, Sql.
-                some projects are done by myself and in a team during my college career, you will find
-                them in the projects section.
-            </p>
-            {/*<p className={styles.git}>Discover them also on Github!</p>*/}
-            
-        </div>
-    </section>
-
-    <div className={styles.skills}>
-        <IconContext.Provider value={{ color: '#E54C21'}}>
-            <Skills nom='html'>
-                <AiOutlineHtml5 />
-            </Skills>
-        </IconContext.Provider>
-        <IconContext.Provider value={{ color: '#304CDC'}}>
-            <Skills nom='css'>
-                <ImCss3 />
-            </Skills>
-        </IconContext.Provider>
-        <IconContext.Provider value={{ color: '#F7DF1E'}}>
-            <Skills nom='Java Script'>
-                <SiJavascript />
-            </Skills>
-        </IconContext.Provider>
-        <IconContext.Provider value={{ color: '#5a24b0'}}>
-            <Skills nom='C#'>
-                <SiCsharp />
-            </Skills>
-        </IconContext.Provider>
-        <IconContext.Provider value={{ color: 'ed4806'}}>
-            <Skills nom='Java'>
-                <DiJava />
-            </Skills>
-        </IconContext.Provider>
-        <IconContext.Provider value={{ color: 'red'}}>
-            <Skills nom='Sql Server'>
-                <SiMicrosoftsqlserver />
-            </Skills>
-        </IconContext.Provider>
-        <IconContext.Provider value={{ color: '#8CC64D'}}>
-            <Skills nom='Node.js'>
-                <FaNodeJs />
-            </Skills>
-        </IconContext.Provider>
-        <IconContext.Provider value={{ color: '#48cffc'}}>
-            <Skills nom='React'>
-                <FaReact />
-            </Skills>
-        </IconContext.Provider>
-        <IconContext.Provider value={{ color: 'purple'}}>
-            <Skills nom='Framework'>
-                <SiDotnet />
-            </Skills>
-        </IconContext.Provider>
-        <div className={styles.container}>
-            <Link to='contact' className={styles.container1}>
-                <span>Send Email</span>
-                <BiMailSend className={styles.icon}/>
-            </Link>
-            <a href={CV} download="CV_BelkacemHeraoua.pdf" className={styles.container1}>
-                <span>Download Cv</span>
-                <BiDownload className={styles.icon}/>
-            </a>    
-        </div>
-        
-    </div>
+   </>
+    
     
 
-        
-    
-    
-    
-</>}
+}

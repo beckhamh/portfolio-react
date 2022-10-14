@@ -1,7 +1,7 @@
 
 import { Helmet } from "react-helmet-async";
 import MainHome from "../components/MainHome";
-
+import Footer from "../components/Footer";
 
 export default function Home(){
     return <main>
@@ -10,6 +10,6 @@ export default function Home(){
             <title>Home - Portfolio Belkacem</title>
         </Helmet>
         <MainHome />
-        
+        <Footer />
     </main>
 }

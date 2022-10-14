@@ -8,7 +8,7 @@ const root = createRoot(container);
 
 if (container.hasChildNodes()) {
   hydrateRoot(
-    <App />, container
+    <App />
   );
 }
 else {

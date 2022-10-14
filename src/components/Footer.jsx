@@ -2,6 +2,6 @@ import styles from './Footer.module.css'
 
 export default function Footer(){
     return <div className={styles.footer}>
-        &copy; Belkacem Heraoua
+        <span className={styles.copy}>&copy; Belkacem Heraoua</span>
     </div>
 }
