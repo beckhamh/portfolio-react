@@ -1,21 +1,14 @@
-import { createRoot, hydrateRoot } from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import  { hydrate, render } from "react-dom";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-
-const container = document.getElementById('root');
-const root = createRoot(container);
-
-if (container.hasChildNodes()) {
-  hydrateRoot(
-    <App />
-  );
+const root = document.getElementById("root");
+if (root.hasChildNodes()) {
+  hydrate(<App />, root);
+} else {
+  render(<App />, root);
 }
-else {
-  root.render(
-    <App />
-  );
-}
+
 
 
 // If you want to start measuring performance in your app, pass a function
