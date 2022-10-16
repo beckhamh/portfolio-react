@@ -1,4 +1,5 @@
 @import-normalise;
+@import "@fontsource/cascadia-mono";
 
 *
 {
@@ -8,4 +9,5 @@
 
 body{
     background-color: #2f3032;
+    font-family: "Cascadia Mono";
 }
