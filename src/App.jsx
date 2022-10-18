@@ -12,7 +12,7 @@ import { BrowserRouter } from "react-router-dom";
 
 // quand tu auras besion de cet pages, tu vas faire l'importation et la charger. import dynamique
 const Home = lazy(() => import("./pages/Home"));
-const Projects = lazy((()=>import("./pages/MainProjects")));
+const Projects = lazy(()=>import("./pages/MainProjects"));
 const Contact = lazy(() => import("./pages/Contact"));
 const WebProject1 = lazy(() => import("./pages/WebProject1"));
 const WebProject2 = lazy(() => import("./pages/WebProject2"));
