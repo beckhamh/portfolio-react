@@ -2,8 +2,6 @@
 import { Helmet } from 'react-helmet-async';
 import styles from './MainProjects.module.css';
 
-import { GiFastBackwardButton } from "react-icons/gi";
-
 import ProjectComponent1 from '../components/ProjectsPage/ProjectComponent1';
 import commandes from '../ressources/commandes.jpg';
 import connexion from '../ressources/connexion.jpg';
