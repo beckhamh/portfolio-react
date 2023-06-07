@@ -44,8 +44,8 @@
 .section1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 5rem .5rem 0 .5rem
+    justify-content:space-around;
+    margin: 7rem .5rem 0 .5rem
 }
 
 .section2 {
