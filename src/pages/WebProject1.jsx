@@ -23,12 +23,9 @@ export default function WebProject1() {
 
         <div className={styles.mainpage}>
             <div className={styles.back}>
-                <GiFastBackwardButton className={styles.iconback}/>
-                <span className={styles.txtback}>Back</span>
             </div>
-            <ProjectComponent1 name='Café hiyoto' description='Web site developed in Node.js during my school career, user can create an account and then 
-            be able to select items (add, delete, modify) and put them in the shopping cart and submit his order.'
-            p3='Web application' p4='Languages: handlebars, js, html, css' p5='Software Platform: Node.js' p6='Protocol: Https' p7='D_B: SqlLite'/>
+            <ProjectComponent1 name='Café hiyoto' description="Site web développé en Node.js pendant ma formation scolaire, où les utilisateurs peuvent créer un compte, sélectionner des articles (ajouter, supprimer, modifier) et les ajouter à leur panier d'achat avant de soumettre leur commande. Le site utilise Node.js pour le rendu côté serveur, offrant ainsi une expérience utilisateur fluide et réactive. De plus, le moteur de template Handelbars est utilisé pour générer les vues côté client, garantissant un affichage dynamique et attrayant des informations."
+            p3='Site web' p4='Languages: js, html css, handelbars rendu serveur' p5='Environnement logiciel : Node.js' p6='Protocole: Https' p7='D_B: SqlLite'/>
             <Gallerie imgs={imgs} />
             
         </div>

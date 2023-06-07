@@ -20,8 +20,8 @@ export default function AppleAppProject(){
             <meta name='description' content='page representant une application developpé par moi meme en swift'/>
             <title>AppProject - Portfolio Belkacem</title>
         </Helmet>
-        <ProjectComponent1 name='À la bonne patate' description='Application that can manage orders in a restaurant displaying the menu, the order summary, a map for delivery and the history of orders.'
-        p3='ios application' p4='Language: SwiftUi' p5='Storage: CoreData'/>
+        <ProjectComponent1 name='À la bonne patate' description="Application permettant de gérer les commandes dans un restaurant en affichant le menu, le récapitulatif des commandes, une carte pour la livraison et l'historique des commandes. Le site est développé en utilisant Node.js avec une interface utilisateur fluide et réactive."
+        p3='ios application' p4='Language: SwiftUi' p5='Stockage: CoreData'/>
         <Gallerie imgs={imgs} />
         
     </>

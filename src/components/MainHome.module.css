@@ -1,37 +1,81 @@
+/* Styles pour l'emoji */
+.emoji {
+    font-size: 48px;
+    position: relative;
+    animation: wave 2s infinite;
+    transform-origin: bottom;
+  }
+  
+  /* Animation de salut */
+  @keyframes wave {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    20% {
+      transform: rotateZ(-3deg);
+    }
+    40% {
+      transform: rotateZ(3deg);
+    }
+    60% {
+      transform: rotateZ(-3deg);
+    }
+    80% {
+      transform: rotateZ(3deg);
+    }
+    100% {
+      transform: rotateZ(0deg);
+    }
+  }
+  
+  
 
-.section1{
+
+.bonjour {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    height: 3.5rem;
+
+}
+
+
+.section1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
-    margin: 10rem auto 1rem;
+    margin: 5rem .5rem 0 .5rem
 }
-.section2{
+
+.section2 {
     display: block;
     flex-direction: column;
     width: 27rem;
 
 }
-.content{
+
+.content {
     display: flex;
     column-gap: 1rem;
     margin-bottom: 2rem;
 }
 
-.skills{
+.skills {
     display: flex;
     flex-direction: column;
     width: 35rem;
     height: 25rem;
 }
 
-.slidbar{
+.slidbar {
     position: relative;
     width: 2rem;
     height: 12rem;
     z-index: 50;
 }
-.circle{
+
+.circle {
     position: absolute;
     top: 1rem;
     left: .6rem;
@@ -41,64 +85,74 @@
     background-color: #2485e0;
     ;
 }
-.bar{
+
+.bar {
     position: absolute;
     top: 1rem;
     left: .8rem;
     width: 2px;
     height: 11rem;
     border-radius: 3rem;
-    background-color:#2485e0;
+    background-color: #2485e0;
 }
-.desciption{
+
+.desciption {
     display: flex;
     flex-direction: column;
     width: 25rem;
-    height: 10rem;                                   
+    height: 10rem;
+    gap: 1rem;
 }
-.bekam{
+
+.bekam {
     font-size: 70px;
     font-weight: 700;
 }
-.is{
+
+.is {
     font-size: 50px;
     color: #2485e0;
 }
-.bh{
-    color: #0f7de3;
-    font-size: 22px;
-    margin: .3rem;
-}
-.fl{
-    font-size: 22px;
-    margin: .3rem;
-    color: #fff;}
 
-h2{
-    margin:0 3rem 0 3rem;
+.bh {
+    color: #0f7de3;
+    font-size: 26px;
+    margin: .3rem;
 }
-.nom{
-    margin-left: .5rem ;
+
+.fl {
+    font-size: 22px;
+    margin: .3rem;
+    color: #fff;
+}
+
+h2 {
+    margin: 0 3rem 0 3rem;
+}
+
+.nom {
+    margin-left: .5rem;
     font-size: 30px;
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 25rem;
     height: 15rem;
     column-gap: 5rem;
+    margin-top: 1rem;
 }
-.txt1{
+
+.txt1 {
     font-size: 19px;
     font-weight: 600;
     color: #767778;
     text-shadow: 1px 0px 1px#fff;
 
 }
-.txt2{
+
+.txt2 {
     font-size: 19px;
     color: #767778;
     margin-top: 1rem;
@@ -106,24 +160,26 @@ h2{
     text-shadow: 1px 0px 1px#fff;
 
 }
-.txtTransition1{
+
+.txtTransition1 {
     font-size: 20px;
     color: #47c8f3;
     margin: 1rem 0 0 0;
 }
-.txtTransition2{
+
+.txtTransition2 {
     font-size: 20px;
     color: #47c8f3;
     margin: 1rem 0 0 0;
 
 }
 
-.section2{
+.section2 {
     display: flex;
     flex-wrap: wrap;
 }
 
-.container1{
+.container1 {
     width: 7rem;
     display: flex;
     justify-content: center;
@@ -137,15 +193,18 @@ h2{
     color: rgb(255, 255, 255);
     margin: .5rem;
 }
-.container1:hover{
+
+.container1:hover {
     background-color: #fff;
     color: #3489d8;
 }
-.r{
+
+.r {
     font-size: 20px;
     margin-left: .4rem;
 }
-.bottons{
+
+.bottons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,7 +213,8 @@ h2{
     margin-bottom: 3rem;
     column-gap: 2rem;
 }
-.contact{
+
+.contact {
     width: 7rem;
     display: flex;
     justify-content: center;
@@ -168,13 +228,14 @@ h2{
     color: rgb(255, 255, 255);
     margin: .5rem;
 }
-.contact:hover{
+
+.contact:hover {
     background-color: #fff;
     color: #3489d8;
 }
 
-@media(max-width:1100px){
-    .section1{
+@media(max-width:1100px) {
+    .section1 {
         display: flex;
         justify-content: center;
     }

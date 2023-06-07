@@ -14,7 +14,7 @@ export default function MainProjects(){
             <title>Projects - Portfolio Belkacem</title>
         </Helmet>
     <section className={styles.section3}>
-        <h1 className={styles.h1}>projects</h1>
+        <h1 className={styles.h1}>projets</h1>
         <div className={styles.cards}>
             <Link to="WebProject1" className={styles.card}>
                 <ProjectsCard img={img1} name='café hiyoto'/>

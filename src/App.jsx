@@ -27,7 +27,7 @@ export default function App() {
         <HelmetProvider>
           <Routes>
             <Route path="/" element={<Layout />}>
-              <Route index element={<Home />} />
+              <Route index element={< Home/>} />
               <Route path="contact" element={<Contact />} />
               <Route path="projects" element={<Projects />} />
               <Route path="projects/AppProject" element={<AppleAppProject />} />

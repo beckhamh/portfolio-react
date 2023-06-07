@@ -8,22 +8,22 @@ export default function MenuNavigation(){
             <ul>
                 <li>
                     {/* className={(navInfo) => navInfo.isActive ? styles.lien : undefined} on peut decontruire l'objet navInfo pour chercher directement isActive*/}
-                    <NavLink to="/" className={({isActive}) => isActive ? styles.lienActive : styles.lien}>.is()</NavLink>
+                    <NavLink to="/" className={({isActive}) => isActive ? styles.lienActive : styles.lien}>Accueil</NavLink>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <NavLink to="projects" className={({isActive}) => isActive ? styles.lienActive : styles.lien}>.work()</NavLink>
+                    <NavLink to="projects" className={({isActive}) => isActive ? styles.lienActive : styles.lien}>Projets</NavLink>
                 </li>
             </ul>
             <ul>
                 <li>
-                <NavLink to="about" className={({isActive}) => isActive ? styles.lienActive : styles.lien}>.about()</NavLink>
+                <NavLink to="about" className={({isActive}) => isActive ? styles.lienActive : styles.lien}>À propos</NavLink>
                 </li>
             </ul>
             <ul>
                 <li>
-                <NavLink to="contact" className={({isActive}) => isActive ? styles.lienActive : styles.lien}>.contact()</NavLink>
+                <NavLink to="contact" className={({isActive}) => isActive ? styles.lienActive : styles.lien}>Contact</NavLink>
                 </li>
             </ul>
                 <a target="_blank" href='https://www.linkedin.com/in/belkacem-heraoua/' rel="noreferrer" className={styles.icon}>

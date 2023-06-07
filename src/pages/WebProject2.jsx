@@ -17,9 +17,8 @@ export default function WebProject2(){
             <meta name='description' content='page representant un projet web developpé avec node.js en groupe, rendue serveur heandelbars'/>
             <title>WebProject2 - Portfolio Belkacem</title>
         </Helmet>
-        <ProjectComponent1 name='Home Service' description='Project developed in node.js for two types of customers, those who want to post a service, 
-        and those who want to see the ads and take advantage of these services, the user can create, modify, delete a service and contact the customer.'
-        p3='Web application' p4='Languages: handlebars, js, html, css' p5='Software Platform: Node.js' p6='Protocol: Https' p7='D_B: SqlLite'/>
+        <ProjectComponent1 name='Home Service' description="Projet développé en Node.js pour deux types de clients : ceux qui souhaitent publier un service et ceux qui souhaitent consulter les annonces et profiter de ces services. L'utilisateur peut créer, modifier et supprimer un service, ainsi que contacter le client. Le site est créé en utilisant le rendu client et le rendu serveur avec Node.js et Handlebars."
+         p3='Site web' p4='Languages: js, html css, handelbars rendu serveur' p5='Environnement logiciel : Node.js' p6='Protocole: Https' p7='D_B: SqlLite'/>
         
         <Gallerie imgs={imgs} />
     </>

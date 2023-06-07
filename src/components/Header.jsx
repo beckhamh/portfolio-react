@@ -27,22 +27,22 @@ export default function Header(){
                 <ul>
                     <li>
                         {/* className={(navInfo) => navInfo.isActive ? styles.lien : undefined} on peut decontruire l'objet navInfo pour chercher directement isActive*/}
-                        <NavLink to="/" onClick={showMenu} className={({isActive}) => isActive ? styles.lienActive : styles.lien}>.is()</NavLink>
+                        <NavLink to="/" onClick={showMenu} className={({isActive}) => isActive ? styles.lienActive : styles.lien}>Accueil</NavLink>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <NavLink to="projects" onClick={showMenu} className={({isActive}) => isActive ? styles.lienActive : styles.lien}>.work()</NavLink>
+                        <NavLink to="projects" onClick={showMenu} className={({isActive}) => isActive ? styles.lienActive : styles.lien}>Projets</NavLink>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                    <NavLink to="about" onClick={showMenu} className={({isActive}) => isActive ? styles.lienActive : styles.lien}>.about()</NavLink>
+                    <NavLink to="about" onClick={showMenu} className={({isActive}) => isActive ? styles.lienActive : styles.lien}>À propos</NavLink>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                    <NavLink to="contact" onClick={showMenu} className={({isActive}) => isActive ? styles.lienActive : styles.lien}>.contact()</NavLink>
+                    <NavLink to="contact" onClick={showMenu} className={({isActive}) => isActive ? styles.lienActive : styles.lien}>Contact</NavLink>
                     </li>
                 </ul>
             </nav>
