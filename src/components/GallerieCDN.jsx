@@ -13,11 +13,10 @@ export default function GallerieCDN() {
         </div>  
     
         <div className={styles.DeuxiemeDiv}>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png' alt= 'Next' />
+            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/120px-Nextjs-logo.svg.png' alt= 'Next' />
             <img src="https://img.icons8.com/material-outlined/344/flutter.png" alt="React" />
             <img src='https://cdn1.iconfinder.com/data/icons/social-media-logos-7/64/android-256.png' alt= 'Android' />
             <img src='https://cdn3.iconfinder.com/data/icons/picons-social/57/16-apple-256.png' alt= 'Apple' />
-            <img src='https://cdn-icons-png.flaticon.com/512/5968/5968509.png' alt= 'JS' />
         </div >
         
         <div className={styles.TroisiemeDiv}>
@@ -28,8 +27,8 @@ export default function GallerieCDN() {
         </div>
         
         <div className={styles.QuatreiemDiv}>
-            <img src='https://cdn-icons-png.flaticon.com/512/6132/6132222.png' alt= 'C++' />
             <img src='https://cdn-icons-png.flaticon.com/128/6132/6132221.png' alt= 'C#' />
+            <img src='https://cdn-icons-png.flaticon.com/512/5968/5968509.png' alt= 'JS' />
         </div>
         <div className={styles.CimqiuemeDiv}>
             <img src='https://cdn1.iconfinder.com/data/icons/cloud-service-development/48/Cassandra-256.png' alt= 'Cassandra' />

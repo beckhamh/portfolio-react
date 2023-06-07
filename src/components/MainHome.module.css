@@ -4,31 +4,36 @@
     position: relative;
     animation: wave 2s infinite;
     transform-origin: bottom;
-  }
-  
-  /* Animation de salut */
-  @keyframes wave {
+}
+
+/* Animation de salut */
+@keyframes wave {
     0% {
-      transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
     }
+
     20% {
-      transform: rotateZ(-3deg);
+        transform: rotateZ(-3deg);
     }
+
     40% {
-      transform: rotateZ(3deg);
+        transform: rotateZ(3deg);
     }
+
     60% {
-      transform: rotateZ(-3deg);
+        transform: rotateZ(-3deg);
     }
+
     80% {
-      transform: rotateZ(3deg);
+        transform: rotateZ(3deg);
     }
+
     100% {
-      transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
     }
-  }
-  
-  
+}
+
+
 
 
 .bonjour {
@@ -44,8 +49,8 @@
 .section1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
-    margin: 7rem .5rem 0 .5rem
+    justify-content: space-around;
+    margin: 7rem 0 0 0
 }
 
 .section2 {
@@ -99,9 +104,11 @@
 .desciption {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 25rem;
     height: 10rem;
     gap: 1rem;
+    padding-left: 1rem;
 }
 
 .bekam {
@@ -142,6 +149,7 @@ h2 {
     height: 15rem;
     column-gap: 5rem;
     margin-top: 1rem;
+    padding-left: 1rem;
 }
 
 .txt1 {
@@ -234,9 +242,32 @@ h2 {
     color: #3489d8;
 }
 
-@media(max-width:1100px) {
+@media (max-width: 1100px) {
     .section1 {
         display: flex;
-        justify-content: center;
+        margin-top: 5rem;
+    }
+    
+
+    .bonjour {
+        font-size: 40px;
+    }
+
+    .bh {
+
+        font-size: 20px;
+    }
+
+    .fl {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 410px) {
+    .desciption {
+        margin-left: 1.5rem;
+    }
+    .box {
+        margin-left: 1.5rem;
     }
 }
